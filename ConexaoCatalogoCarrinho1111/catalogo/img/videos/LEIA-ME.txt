@@ -1,0 +1,1 @@
+Coloque aqui o video de fundo do topo do site com o nome hero.mp4 (MP4/H.264, 1080p, 10-20s, ate 8MB, sem audio, de preferencia carro sendo lavado/polido). Se o arquivo nao existir, o site funciona normalmente com o fundo animado.

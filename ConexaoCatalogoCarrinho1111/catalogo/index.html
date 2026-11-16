@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#070b14">
+<meta name="description" content="Catálogo de produtos de estética e limpeza automotiva da Conexão Autos Distribuidora.">
+<title>Conexão Autos | Catálogo de Produtos</title>
+<link rel="icon" href="img/logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="premium.css">
+</head>
+<body>
+<header class="topo">
+    <a class="marca" href="#" aria-label="Conexão Autos - início">
+      <img src="img/logo.jpeg" alt="Logo Conexão Autos Distribuidora" class="logo">
+      <span class="marca-texto"><strong>CONEXÃO <b>AUTOS</b></strong><small>DISTRIBUIDORA</small></span>
+    </a>
+    <label class="busca" for="busca">
+      <span class="busca-icone" aria-hidden="true">⌕</span>
+      <input id="busca" type="search" placeholder="Buscar produto..." autocomplete="off">
+      <span class="atalho">CATÁLOGO</span>
+    </label>
+    <button id="cart-abrir" class="cart-btn" type="button" aria-label="Abrir carrinho, vazio" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6"/></svg>
+      <span class="cart-btn-texto">CARRINHO</span>
+      <span id="cart-badge" class="cart-badge" hidden>0</span>
+    </button>
+  </header>
+<main>
+<section class="x-hero">
+  <video class="x-vid" autoplay muted loop playsinline preload="metadata" poster="img/logo-loja.jpeg" aria-hidden="true"><source src="img/videos/hero.mp4" type="video/mp4" onerror="this.parentNode.remove()"></video>
+  <div class="x-streaks"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7" data-rv>
+        <span class="eyebrow"><i></i> DISTRIBUIDORA AUTOMOTIVA</span>
+        <h1>Brilho de <em>showroom</em><br>em cada detalhe.</h1>
+        <p>Ceras, polidores, lavagem, couro e acessórios das melhores marcas do detailing. Monte seu pedido e receba o orçamento direto no WhatsApp.</p>
+        <div class="d-flex gap-3 flex-wrap mt-4"><a class="hero-cta" href="#catalogo">EXPLORAR CATÁLOGO <span>↘</span></a><a class="x-ghost" href="#diferenciais">POR QUE A CONEXÃO</a></div>
+      </div>
+      <div class="col-lg-5 text-center" data-rv><div class="x-logo"><i></i><img src="img/logo-loja.jpeg" alt="Logo Conexão Autos Distribuidora"></div></div>
+    </div>
+    <div class="row g-3 x-stats">
+      <div class="col-4"><b data-count="0" id="st-prod">0</b><span>PRODUTOS</span></div>
+      <div class="col-4"><b data-count="0" id="st-cat">0</b><span>CATEGORIAS</span></div>
+      <div class="col-4"><b data-count="10" data-suf="+">0</b><span>MARCAS</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="x-marquee" aria-hidden="true"><div class="x-track"><span>CADILLAC</span><span>VONIXX</span><span>SOFT99</span><span>AUTOAMERICA</span><span>SGT</span><span>DUB</span><span>VINTEX</span><span>TRYON</span><span>DWAX</span><span>AREON</span><span>CADILLAC</span><span>VONIXX</span><span>SOFT99</span><span>AUTOAMERICA</span><span>SGT</span><span>DUB</span><span>VINTEX</span><span>TRYON</span><span>DWAX</span><span>AREON</span></div></div>
+
+<section id="diferenciais" class="container x-dif">
+  <div class="row g-4">
+    <div class="col-md-4" data-rv><div class="x-feat"><i class="bi bi-patch-check"></i><h3>Marcas de confiança</h3><p>Seleção das linhas mais usadas por lava-rápidos, estéticas e detailers.</p></div></div>
+    <div class="col-md-4" data-rv><div class="x-feat"><i class="bi bi-box-seam"></i><h3>Do varejo ao galão de 5L</h3><p>Produtos em várias embalagens, incluindo a Categoria Profissional.</p></div></div>
+    <div class="col-md-4" data-rv><div class="x-feat"><i class="bi bi-whatsapp"></i><h3>Orçamento rápido</h3><p>Monte o carrinho e envie o pedido pronto para nossa equipe comercial.</p></div></div>
+  </div>
+</section>
+
+<section class="catalogo-intro" id="catalogo">
+  <div><span class="secao-label">LINHA DE PRODUTOS</span><h2>Nosso <span>catálogo</span></h2><p>Clique em qualquer produto para ver detalhes, fotos e adicionar ao carrinho.</p></div>
+  <div class="catalogo-detalhe"><span class="detalhe-ponto"></span> SELEÇÃO CONEXÃO AUTOS</div>
+</section>
+<nav id="filtros" class="filtros" aria-label="Filtrar produtos por categoria"></nav>
+<section class="catalogo-area">
+  <div class="resultados"><p id="contador" class="contador" aria-live="polite"></p>
+    <select id="ordem" class="x-sort" aria-label="Ordenar produtos"><option value="">Ordenar: destaque</option><option value="menor">Menor preço</option><option value="maior">Maior preço</option><option value="az">A – Z</option></select></div>
+  <div id="grade" class="grade"></div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-marca"><img src="img/logo.jpeg" alt="" class="logo" width="52" height="52"><div><strong>CONEXÃO AUTOS</strong><small>DISTRIBUIDORA</small></div></div>
+  <p>Estética automotiva com qualidade e confiança.<br>Preços de referência, sujeitos a confirmação pela equipe comercial.</p>
+  <span class="footer-copy">© <span id="ano"></span> Conexão Autos Distribuidora. Todos os direitos reservados.</span>
+</footer>
+
+<div class="modal fade" id="pm" tabindex="-1" aria-labelledby="pm-nome" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"><div class="modal-content pm">
+    <button type="button" class="btn-close btn-close-white pm-x" data-bs-dismiss="modal" aria-label="Fechar"></button>
+    <div class="row g-0">
+      <div class="col-md-5 pm-foto"><img id="pm-img" alt=""></div>
+      <div class="col-md-7 pm-info">
+        <div id="pm-cats"></div><h3 id="pm-nome"></h3><span id="pm-cod" class="cod"></span>
+        <p id="pm-desc"></p><ul id="pm-specs" class="pm-specs"></ul>
+        <div id="pm-preco" class="preco"></div>
+        <div class="acao" id="pm-acao"></div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<button id="cart-flutuante" class="cart-flutuante" type="button" hidden aria-label="Abrir carrinho"><span><b id="flu-itens">0</b> item(ns)</span><strong id="flu-total">R$ 0,00</strong><em>Ver carrinho ›</em></button>
+
+<div id="cart-overlay" class="cart-overlay" hidden></div>
+  <aside id="cart" class="cart" role="dialog" aria-modal="true" aria-labelledby="cart-titulo" aria-hidden="true">
+    <header class="cart-topo">
+      <h2 id="cart-titulo">Seu pedido</h2>
+      <button id="cart-fechar" class="cart-fechar" type="button" aria-label="Fechar carrinho">×</button>
+    </header>
+
+    <div class="cart-corpo">
+      <div id="cart-vazio" class="cart-vazio">
+        <strong>Seu carrinho está vazio</strong>
+        <p>Use o botão "Adicionar ao carrinho" nos produtos para montar sua solicitação de orçamento.</p>
+      </div>
+
+      <div id="cart-conteudo" hidden>
+        <ul id="cart-lista" class="cart-lista"></ul>
+        <button id="cart-limpar" class="cart-limpar" type="button" hidden>Limpar carrinho</button>
+
+        <dl class="cart-resumo">
+          <div><dt>Total de itens</dt><dd id="res-itens">0</dd></div>
+          <div><dt>Produtos diferentes</dt><dd id="res-produtos">0</dd></div>
+          <div class="geral"><dt>Valor geral estimado</dt><dd id="res-total">R$ 0,00</dd></div>
+        </dl>
+
+        <form id="cart-form" class="cart-form" novalidate>
+          <h3>Seus dados</h3>
+          <label for="c-nome">Nome do comprador *</label>
+          <input id="c-nome" type="text" autocomplete="name" autocapitalize="words" enterkeyhint="next" maxlength="80" aria-describedby="erro-nome">
+          <small id="erro-nome" class="erro" role="alert"></small>
+
+          <label for="c-empresa">Empresa ou estabelecimento *</label>
+          <input id="c-empresa" type="text" autocomplete="organization" autocapitalize="words" enterkeyhint="next" maxlength="80" aria-describedby="erro-empresa">
+          <small id="erro-empresa" class="erro" role="alert"></small>
+
+          <label for="c-documento">CPF ou CNPJ *</label>
+          <input id="c-documento" type="text" inputmode="text" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="next" autocomplete="off" maxlength="18" placeholder="000.000.000-00 ou 00.000.000/0000-00" aria-describedby="erro-documento">
+          <small id="erro-documento" class="erro" role="alert"></small>
+
+          <label for="c-cidade">Cidade *</label>
+          <input id="c-cidade" type="text" autocomplete="address-level2" autocapitalize="words" enterkeyhint="next" maxlength="60" aria-describedby="erro-cidade">
+          <small id="erro-cidade" class="erro" role="alert"></small>
+
+          <label for="c-telefone">Telefone para contato <span class="opc">(opcional)</span></label>
+          <input id="c-telefone" type="tel" inputmode="tel" enterkeyhint="send" autocomplete="tel-national" maxlength="15" placeholder="(00) 00000-0000" aria-describedby="erro-telefone">
+          <small id="erro-telefone" class="erro" role="alert"></small>
+        </form>
+        <p class="cart-aviso-legal"><strong>Importante:</strong> enviar a mensagem é apenas uma solicitação de orçamento. <strong>Não significa compra confirmada nem reserva automática de estoque.</strong> Nossa equipe confirma disponibilidade, preços e condições.</p>
+      </div>
+    </div>
+
+    <div class="cart-rodape">
+      <p id="cart-aviso" class="cart-aviso" role="alert" hidden></p>
+      <p id="cart-fallback" class="cart-fallback" hidden>O WhatsApp não abriu? <a id="cart-link" href="#" target="_blank" rel="noopener">Toque aqui para abrir</a></p>
+      <div class="cart-total-mini"><span>Total estimado</span><strong id="rod-total">R$ 0,00</strong></div>
+      <button id="cart-enviar" class="cart-enviar" type="button" disabled>Enviar pedido no WhatsApp</button>
+    </div>
+  </aside>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+<script src="validacao.js"></script>
+<script src="produtos.js"></script>
+<script src="carrinho.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
