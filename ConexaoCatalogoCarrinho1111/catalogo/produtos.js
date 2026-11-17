@@ -195,6 +195,10 @@ const IMAGENS = {
   184: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGTh6crF7_hCxh-VdhOUfsCnIrk_Bid8e39QSRxsq8LQ&s",
   185: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAsYxktBmalOVQgtsexOPCRK400vflHPrjTRKk-jTQyg&s=10",
   186: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrcrg1Lxf9wulqEPj-6uuxklWTgMY4TtlbS-bvGHw_iQ&s=10"
+  187: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROghnhDVNON2izbMzN8J9m3IN7rjzz1-q-2Wuj65fKfA&s=10",
+  188: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Oa23zNUnOI1yQzgX-TCoS9JQcKgEHczVj_KkRgUvMg&s=10",
+  189: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOZqNXsI33GwQHHov4EIOQak_yxekV8MhU1StxpVE9ig&s=10",
+  190: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2aWzHFhtK_Qf19xfX2YIeoNx2ez_A8DBlhVIigoczug&s=10"
 };
 // 1 - Toalha em Microfibra 40x60 Amarela SGT
 // 2 - Espuma Aplicadora de Cera 100mm Amarela
