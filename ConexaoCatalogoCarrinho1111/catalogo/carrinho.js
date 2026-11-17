@@ -176,7 +176,7 @@ const Carrinho = (() => {
     const d = lerFormulario();
     const e = {};
     if (d.nome.length < 3) e.nome = "Informe o nome do comprador.";
-    if (d.empresa.length < 2) e.empresa = "Informe o nome da empresa ou estabelecimento.";
+    //if (d.empresa.length < 2) e.empresa = "Informe o nome da empresa ou estabelecimento.";
     if (!d.documento) {
       if (CONFIG.documentoObrigatorio !== false) e.documento = "Informe o CPF ou CNPJ.";
     } else if (!Validacao.documento(d.documento).ok) {
