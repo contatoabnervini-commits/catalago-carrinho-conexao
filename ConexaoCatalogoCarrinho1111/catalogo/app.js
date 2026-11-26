@@ -1,11 +1,13 @@
 const REGRAS = [
   [/AROMATIZ|AREON|LITTLE|AIR TRUCK|NATUAR/i, "Aromatizantes"],
-  [/ESCOVA|PINCEL|BOINA|APLICADOR|ESPUMA APLIC|CANHÃO|PISTOLA|CALOTA|SNOW PUMP|GLACO|SNOW FOAM|TORNADOR/i, "Acessórios e Aplicadores"],
+  [/ESCOVA|PINCEL|BOINA|APLICADOR|ESPUMA APLIC|CANHÃO|PISTOLA|SNOW PUMP|GLACO/i, "Acessórios e Aplicadores"],
   [/MICROFIBRA|TOALHA|FLANELA|LUVA|PANOS/i, "Microfibras e Toalhas"],
   [/PNEU|BORRACHA|PARA-CHOQUES|PLÁSTICO|REVITALIZ/i, "Pneus e Plásticos"],
   [/COURO|HIDRACOURO|LEATHER|INTERIOR|APC|ESTOFADOS|OXXY/i, "Couro e Interior"],
   [/LAVA AUTO|HIGH SHINE|NEVASCA|PRE WASH|DEMOLIDOR/i, "Lavagem"],
   [/CERA|WAX|POLID|POLIMENTO|CORTE|CLAY|ATOMIC|CARNAÚBA|CRISTALIZANTE|FINALE|BLEND|GLOSS|LUSTRO|REFINO|V10|V20|V30|V40/i, "Ceras e Polimento"],
+  [/CALOTA/i,"Calotas"],
+  [/PALHETA/i,"Palhetas"],
 ];
 const REGRA_PROFISSIONAL = /\b(1,5|5)\s?(L|LITROS?)\b/i;
 const PROFISSIONAL_EXCLUSIVA = true;
@@ -27,6 +29,8 @@ const DESC = {
   "Aromatizantes": "Fragrância marcante e duradoura para deixar o interior do veículo com cheiro de novo.",
   "Categoria Profissional": "Embalagem econômica (galão) para uso intensivo em lava-rápidos e estéticas, com excelente custo por aplicação.",
   "Limpeza Geral": "Produto de limpeza automotiva de uso versátil, indicado para rotina de lavagem e manutenção do veículo.",
+  "Palheta": "Desempenho e durabilidade para uma limpeza eficiente e mais segurança ao dirigir.",
+  "Calotas": "Visual renovado, acabamento de qualidade e encaixe perfeito para valorizar o seu veículo.", 
 };
 const fmt = v => v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
